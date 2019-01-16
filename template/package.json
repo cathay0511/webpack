@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
-  "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -24,13 +23,14 @@
     {{/lint}}
     "build": "node build/build.js"
   },
+  "main": "index.js",
   "dependencies": {
     "vue": "^2.5.2"{{#router}},
     "vue-router": "^3.0.1"{{/router}}
   },
   "devDependencies": {
     {{#lint}}
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^7.2.3",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
