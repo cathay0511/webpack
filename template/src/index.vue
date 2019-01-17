@@ -1,7 +1,7 @@
 <template>
-  <div id="star">
+  <div class="root">
     <img src="//pt-starimg.didistatic.com/static/starimg/img/1512125138062YWDdoSWsNBleIjjayOg.png">
-    <h2>{{ title }}</h2>
+    <h2>\{{title}}</h2>
     {{#router}}
     <router-view/>
     {{else}}
