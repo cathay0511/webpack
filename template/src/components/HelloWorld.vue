@@ -1,7 +1,8 @@
 <template>
   <div class="hello">
     <img src="//pt-starimg.didistatic.com/static/starimg/img/1512125138062YWDdoSWsNBleIjjayOg.png">
-    <h1>\{{ msg }}</h1>
+    <h2>\{{ msg }}</h1>
+    <h5 class="slogan">simple &! common</h5>
   </div>
 </template>
 
@@ -17,8 +18,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.hello {
-  text-align: center;
+<style lang="scss" scoped>
+
+$color: #999;
+
+.slogan {
+  color: $color;
+  font-size: 14px;
 }
+
 </style>
