@@ -20,7 +20,7 @@
     {{/if_or}}
     {{#lint}}
     "lint": "eslint --ext .js,.vue src{{#unit}} test/unit{{/unit}}{{#e2e}} test/e2e/specs{{/e2e}}",
-    "fix": "eslint --fix ./src/*",
+    "fix": "eslint --ext .js,.vue src --fix",
     {{/lint}}
     "build": "node build/build.js"
   },
