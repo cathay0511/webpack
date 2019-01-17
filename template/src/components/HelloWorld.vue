@@ -2,7 +2,6 @@
   <div class="hello">
     <img src="//pt-starimg.didistatic.com/static/starimg/img/1512125138062YWDdoSWsNBleIjjayOg.png">
     <h1>\{{ msg }}</h1>
-    <h2>simple &! common</h2>
   </div>
 </template>
 
