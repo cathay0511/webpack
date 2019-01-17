@@ -22,9 +22,13 @@ export default {
 
 $color: #999;
 
-.slogan {
-  color: $color;
-  font-size: 14px;
+.hello {
+  text-align: center;
+
+  .slogan {
+    color: $color;
+    font-size: 14px;
+  }
 }
 
 </style>
