@@ -44,7 +44,7 @@ module.exports = {
       type: 'string',
       required: false,
       message: 'Project description',
-      default: 'sample star component',
+      default: 'star component',
     },
     author: {
       when: 'isNotTest',

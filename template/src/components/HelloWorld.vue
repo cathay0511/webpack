@@ -1,17 +1,15 @@
 <template>
   <div class="hello">
-    <img src="//pt-starimg.didistatic.com/static/starimg/img/1512125138062YWDdoSWsNBleIjjayOg.png">
-    <h2>\{{ msg }}</h2>
-    <h5 class="slogan">simple &! common</h5>
+    <h5 class="slogan">{{ msg }}</h5>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'hi, star component!'
+  props: {
+    msg: {
+      type: String
     }
   }
 }
@@ -23,7 +21,6 @@ export default {
 $color: #999;
 
 .hello {
-  text-align: center;
 
   .slogan {
     color: $color;
