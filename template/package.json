@@ -27,6 +27,7 @@
   "main": "index.js",
   "devDependencies": {
     "vue": "^2.5.2"{{#router}},
+    "element-ui": "^2.4.11",
     "vue-router": "^3.0.1"{{/router}},
     {{#lint}}
     "babel-eslint": "^7.2.3",
