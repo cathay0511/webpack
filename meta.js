@@ -133,6 +133,21 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
     },
+    location: {
+      when: 'isNotTest',
+      type: 'list',
+      message: 'choose location',
+      choices: [
+        {
+          name: 'current folder',
+          value: 'current',
+        },
+        {
+          name: 'new folder',
+          value: 'new',
+        }
+      ],
+    },
     autoInstall: {
       when: 'isNotTest',
       type: 'list',
@@ -177,6 +192,7 @@ module.exports = {
     sortDependencies(data, green)
 
     const cwd = path.join(process.cwd(), data.inPlace ? '' : data.destDirName)
+    console.log(7878, cwd)
 
     if (data.autoInstall) {
       installDependencies(cwd, data.autoInstall, green)
